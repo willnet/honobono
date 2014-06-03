@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'rake'
+require 'logger'
+
+log_dir = '/tmp/honobono.log' # FIXME
+logger = Logger.new(log_dir)
+
+logger.info "[start] rake #{ARGV[1]} #{Time.now}"
+Rake.application.run
+logger.info "[end] rake #{ARGV[1]} #{Time.now}"
