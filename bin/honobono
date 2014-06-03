@@ -5,7 +5,6 @@ require 'logger'
 
 log_dir = '/tmp/honobono.log' # FIXME
 logger = Logger.new(log_dir)
-
-logger.info "[start] rake #{ARGV[1]} #{Time.now}"
+logger.info "[start] rake #{ARGV[0]}"
 Rake.application.run
-logger.info "[end] rake #{ARGV[1]} #{Time.now}"
+logger.info "[end] rake #{ARGV[0]}"
