@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Honobono::VERSION
   spec.authors       = ["willnet"]
   spec.email         = ["netwillnet@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{auto logger for rake}
+  spec.description   = %q{auto logger for rake}
+  spec.homepage      = "https://github.com/willnet/honobono"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
