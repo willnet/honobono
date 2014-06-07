@@ -2,8 +2,14 @@
 
 require 'rake'
 require 'logger'
+require 'yaml'
 
-log_dir = '/tmp/honobono.log' # FIXME
+log_dir = if File.exists?('config/honobono.yml')
+            yaml = YAML.load(File.read('config/honobono.yml'))
+            yaml['log_dir']
+          else
+            '/tmp/honobono.log'
+          end
 logger = Logger.new(log_dir)
 logger.info "[start] rake #{ARGV[0]}"
 Rake.application.run
