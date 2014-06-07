@@ -15,9 +15,22 @@ This gem is NOT implemented yet.
   * 全部出力するのはアレなので、出し分けできるようにする
     * prerequisition で設定する
     * `log do ... end` みたいなブロックも使えるようにする
-  * エラー時にもログ吐く 
+  * エラー時にもログ吐く
     * 設定で airbrake などに投げることもできるようにしたい
     * 普通にログだした後にエラーを再度 raise させるのでもよい？→独自の設定書いたりする需要あるはずなので、うまく設定できるようにしたい
+
+## features
+
+* You can use `honobono` command instead of `rake`.
+* `honobono` write log.
+* default log file path is `/tmp/honobono.log`.
+* You can set path with `config/honobono.yml`.
+
+e.g.
+
+```yaml
+log_dir: /your/log/path.yml
+```
 
 ## Installation
 
