@@ -19,7 +19,7 @@ This gem is NOT implemented yet.
     * 設定で airbrake などに投げることもできるようにしたい
     * 普通にログだした後にエラーを再度 raise させるのでもよい？→独自の設定書いたりする需要あるはずなので、うまく設定できるようにしたい
 
-## features
+## Usage
 
 * You can use `honobono` command instead of `rake`.
 * `honobono` write log.
@@ -45,10 +45,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install honobono
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
