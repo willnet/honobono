@@ -22,6 +22,7 @@ This gem is NOT implemented yet.
 ## Usage
 
 * You can use `honobono` command instead of `rake`.
+  * `hnbn` is alias
 * `honobono` write log.
 * default log file path is `/tmp/honobono.log`.
 * You can set path with `config/honobono.yml`.
