@@ -1,5 +1,8 @@
-[![Stories in Ready](https://badge.waffle.io/willnet/honobono.png?label=ready&title=Ready)](https://waffle.io/willnet/honobono)
 # Honobono
+
+[![Stories in Ready](https://badge.waffle.io/willnet/honobono.png?label=ready&title=Ready)](https://waffle.io/willnet/honobono)
+[![Code Climate](https://codeclimate.com/repos/5501569fe30ba0269f00128e/badges/66d6dbaa4c57c563c4fb/gpa.svg)](https://codeclimate.com/repos/5501569fe30ba0269f00128e/feed)
+[![Test Coverage](https://codeclimate.com/repos/5501569fe30ba0269f00128e/badges/66d6dbaa4c57c563c4fb/coverage.svg)](https://codeclimate.com/repos/5501569fe30ba0269f00128e/feed)
 
 ## WARNING
 
