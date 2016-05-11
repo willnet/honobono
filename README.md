@@ -1,8 +1,9 @@
 # Honobono
 
 [![Stories in Ready](https://badge.waffle.io/willnet/honobono.png?label=ready&title=Ready)](https://waffle.io/willnet/honobono)
-[![Code Climate](https://codeclimate.com/repos/5501569fe30ba0269f00128e/badges/66d6dbaa4c57c563c4fb/gpa.svg)](https://codeclimate.com/repos/5501569fe30ba0269f00128e/feed)
-[![Test Coverage](https://codeclimate.com/repos/5501569fe30ba0269f00128e/badges/66d6dbaa4c57c563c4fb/coverage.svg)](https://codeclimate.com/repos/5501569fe30ba0269f00128e/feed)
+[![Code Climate](https://codeclimate.com/github/willnet/honobono/badges/gpa.svg)](https://codeclimate.com/github/willnet/honobono)
+[![Test Coverage](https://codeclimate.com/github/willnet/honobono/badges/coverage.svg)](https://codeclimate.com/github/willnet/honobono/coverage)
+[![Issue Count](https://codeclimate.com/github/willnet/honobono/badges/issue_count.svg)](https://codeclimate.com/github/willnet/honobono)
 
 ## WARNING
 
