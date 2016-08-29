@@ -12,9 +12,9 @@ module Honobono
                   '/tmp/honobono.log'
                 end
       logger = Logger.new(log_dir)
-      logger.info "[start] rake #{ARGV[0]}"
+      logger.info "[start] rake #{ARGV[0]} at #{Time.now}"
       Rake.application.run
-      logger.info "[end] rake #{ARGV[0]}"
+      logger.info "[end] rake #{ARGV[0]} at #{Time.now}"
     end
   end
 end
