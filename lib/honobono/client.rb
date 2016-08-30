@@ -1,5 +1,3 @@
-require 'securerandom'
-
 module Honobono
   class Client
     def self.run
@@ -14,10 +12,9 @@ module Honobono
                   '/tmp/honobono.log'
                 end
       logger = Logger.new(log_dir)
-      uuid = SecureRandom.uuid
-      logger.info "[#{uuid}][start] rake #{ARGV[0]} at #{Time.now}"
+      logger.info "[start] rake #{ARGV[0]}"
       Rake.application.run
-      logger.info "[#{uuid}][end] rake #{ARGV[0]} at #{Time.now}"
+      logger.info "[end] rake #{ARGV[0]}"
     end
   end
 end
