@@ -1,6 +1,20 @@
 #!/usr/bin/env ruby
+require 'optparse'
 $LOAD_PATH << File.expand_path('../../lib', __FILE__)
 
 require 'honobono'
 
-Honobono::Client.run
+options = {}
+
+op = OptionParser.new
+op.banner = <<-EOS
+honobono [options]
+
+You can use not only following options but also rake options.
+If you want to see rake options, do 'rake -h'
+EOS
+
+op.on('-o', '--output=VALUE', 'Specifies logfile path. Default to stdout.') { |o| options[:output_path] = o }
+op.parse!(ARGV)
+
+Honobono::Client.run(options)

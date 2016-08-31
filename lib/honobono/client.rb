@@ -1,20 +1,19 @@
 module Honobono
   class Client
-    def self.run
-      new.run
+    def self.run(options)
+      new(options).run
+    end
+
+    def initialize(output_path: nil)
+      @output_path = output_path
     end
 
     def logger
-      Logger.new(log_dir)
+      Logger.new(output)
     end
 
-    def log_dir
-      if File.exist?('config/honobono.yml')
-        yaml = YAML.load(File.read('config/honobono.yml'))
-        yaml['log_dir']
-      else
-        '/tmp/honobono.log'
-      end
+    def output
+      @output_path ? @output_path : STDOUT
     end
 
     def run
